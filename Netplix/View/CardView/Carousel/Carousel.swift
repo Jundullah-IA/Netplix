@@ -28,7 +28,7 @@ struct Carousel: View {
                 }
             }.padding(.top)
         }
-        .frame(height: 200)
+        .frame(height: 220)
         .onAppear(
             perform: {
                 if (movieList.count != 0) {

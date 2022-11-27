@@ -14,6 +14,7 @@ struct MovieCard: View {
         ZStack {
             RoundedRectangle(cornerRadius: 25)
                 .foregroundColor(Color.gray)
+                .frame(width: 330, height: 200)
             
             HStack {
                 Image(movie.poster_path)
@@ -32,7 +33,7 @@ struct MovieCard: View {
                         .truncationMode(.tail)
                 }
             }
-        } .frame(width: 330,height: 180)
+        } .frame(width: 330, height: 200)
     }
 }
 

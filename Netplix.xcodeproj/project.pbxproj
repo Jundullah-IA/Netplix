@@ -15,6 +15,9 @@
 		081DCDF32930BFFA00441107 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081DCDF22930BFFA00441107 /* MovieModel.swift */; };
 		088641A62933439F00F7AA54 /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088641A52933439F00F7AA54 /* MovieCard.swift */; };
 		088641A829334A3100F7AA54 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088641A729334A3100F7AA54 /* Carousel.swift */; };
+		088641AA29336AAA00F7AA54 /* MovieCard_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088641A929336AAA00F7AA54 /* MovieCard_1.swift */; };
+		088641AC29336DE600F7AA54 /* MovieCard_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088641AB29336DE600F7AA54 /* MovieCard_2.swift */; };
+		088641B029336F8A00F7AA54 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088641AF29336F8A00F7AA54 /* MovieDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		081DCDF22930BFFA00441107 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		088641A52933439F00F7AA54 /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
 		088641A729334A3100F7AA54 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
+		088641A929336AAA00F7AA54 /* MovieCard_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard_1.swift; sourceTree = "<group>"; };
+		088641AB29336DE600F7AA54 /* MovieCard_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard_2.swift; sourceTree = "<group>"; };
+		088641AF29336F8A00F7AA54 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +86,9 @@
 		081DCDEE2930B33400441107 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				088641AD29336E8900F7AA54 /* CardView */,
 				081DCDEF2930B34F00441107 /* HomeView.swift */,
-				088641A729334A3100F7AA54 /* Carousel.swift */,
-				088641A52933439F00F7AA54 /* MovieCard.swift */,
+				088641AF29336F8A00F7AA54 /* MovieDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,6 +99,25 @@
 				081DCDF22930BFFA00441107 /* MovieModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		088641AD29336E8900F7AA54 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				088641AE29336ED900F7AA54 /* Carousel */,
+				088641A929336AAA00F7AA54 /* MovieCard_1.swift */,
+				088641AB29336DE600F7AA54 /* MovieCard_2.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		088641AE29336ED900F7AA54 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				088641A729334A3100F7AA54 /* Carousel.swift */,
+				088641A52933439F00F7AA54 /* MovieCard.swift */,
+			);
+			path = Carousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +192,13 @@
 			files = (
 				088641A62933439F00F7AA54 /* MovieCard.swift in Sources */,
 				081DCDF32930BFFA00441107 /* MovieModel.swift in Sources */,
+				088641AA29336AAA00F7AA54 /* MovieCard_1.swift in Sources */,
+				088641B029336F8A00F7AA54 /* MovieDetailView.swift in Sources */,
 				081DCDF02930B34F00441107 /* HomeView.swift in Sources */,
 				088641A829334A3100F7AA54 /* Carousel.swift in Sources */,
 				081DCDE32930B28C00441107 /* ContentView.swift in Sources */,
 				081DCDE12930B28C00441107 /* NetplixApp.swift in Sources */,
+				088641AC29336DE600F7AA54 /* MovieCard_2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

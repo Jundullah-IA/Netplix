@@ -23,6 +23,36 @@ struct HomeView: View {
         NavigationView {
             ScrollView {
                 Carousel(movieList: movieList)
+                
+                HStack {
+                    Text("Latest")
+                        .bold()
+                        .padding(.leading)
+                    Spacer()
+                }
+                
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(movieList) { movie in
+                            MovieCard_1(movie: movie)
+                        }
+                    } .padding(.leading)
+                }
+                
+                HStack {
+                    Text("Action")
+                        .bold()
+                        .padding(.leading)
+                    Spacer()
+                }
+                
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(movieList) { movie in
+                            MovieCard_2(movie: movie)
+                        }
+                    } .padding(.leading)
+                }
             }
             
             .animation(.spring(), value: searchResults.count)
