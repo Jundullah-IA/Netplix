@@ -22,11 +22,21 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                Carousel(movieList: movieList)
-                
-                SectionView_M(title: "Latest", movieList: movieList)
-                
-                SectionView_L(title: "Action", movieList: movieList)
+                if searchText == "" {
+                    Carousel(movieList: movieList)
+                    
+                    SectionView_M(title: "Latest", movieList: movieList)
+                    
+                    SectionView_L(title: "Action", movieList: movieList)
+                    
+                    SectionView_L(title: "Drama", movieList: movieList)
+                } else {
+                    if searchResults.count == 0 {
+                        Text("Movie not found")
+                    } else {
+                        SearchView(movieList: searchResults)
+                    }
+                }
             }
             
             .animation(.spring(), value: searchResults.count)
