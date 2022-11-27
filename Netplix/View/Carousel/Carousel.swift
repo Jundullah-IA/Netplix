@@ -16,6 +16,7 @@ struct Carousel: View {
             TabView(selection: $id) {
                 ForEach(movieList) { movie in
                     MovieCard(movie: movie)
+                    
                 }
             } .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         
@@ -28,6 +29,7 @@ struct Carousel: View {
                 }
             }.padding(.top)
         }
+        
         .frame(height: 220)
         .onAppear(
             perform: {

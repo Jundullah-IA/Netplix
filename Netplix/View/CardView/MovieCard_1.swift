@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MovieCard_1: View {
+    @State var showView = false
+
     var movie: Movie
     
     var body: some View {
@@ -30,6 +32,12 @@ struct MovieCard_1: View {
         }
         .frame(width: 150, height: 150)
         .padding(.trailing)
+        .onTapGesture { showView = true }
+        .sheet(isPresented: $showView,
+               onDismiss: {showView = false}
+        ) {
+            MovieDetailView(movie: movie)
+        }
     }
 }
 
